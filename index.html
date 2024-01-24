@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manosha Cooray</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/ebb9918a3e.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/Logo.png" alt="logo" class="logo">
+
+                <ul id = "sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closeMenu()"></i>
+                </ul>
+
+                <i class="fa-solid fa-bars" onclick="openMenu()"></i>
+
+            </nav>
+
+            <div class="header-text">
+                <p>Software Engineering Undergraduate</p>
+                <h1>
+                    Hello, I am <span>Manosha Cooray</span> <br>from CINEC Campus
+                </h1>
+            </div>
+
+        </div>
+    </div>
+
+    <script src = "menu.js"></script>
+
+
+<!--------------------about-------------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/background_2.jpg" alt="User">
+                </div>
+
+                <div class="about-col-2">
+                    <h1 class="sub-title">About me</h1>
+                    <p class="myself">
+                        My name is <span>Manosha Eronne Cooray</span>. I went to St. Sebastian's College Moratuwa from 2006 to 2019. I am currently a software engineering undergraduate of CINEC CAMPUS.
+                        Who is looking for an intern to gain industrial experience and enhance my skills in both IT and management fields. I have a passion
+                        to build systems by integarating both the knowldge of mine and the world. 
+
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="openTab('skills')">Skills</p>
+                        <p class="tab-links" onclick="openTab('experience')">Experience</p>
+                        <p class="tab-links" onclick="openTab('education')">Education</p>
+                    </div>
+                    <!--For skills-->
+                    <div class="tab-contents active-tab" id = "skills">
+                        <ul>
+                            <li><span>Web development</span><br>Web app development (HTMl, Java Script, CSS, PHP)</li>
+                            <li><span>Mobile development</span> <br>Mobile app development (Java , Kotlin)</li>
+                            <li><span>Machine leraning</span><br>AI chat Bot development (Python, Tensor Flow, Numpy)</li>
+                        </ul>
+                        
+                    </div>
+
+                    <!--For expereince-->
+                    <div class="tab-contents" id = "experience">
+                        <ul>
+                            <li>Currently skeeing an internship to gain industrial experience.</li>
+                            
+                        </ul>
+                        
+                    </div>
+
+                    <!--For Education-->
+                    <div class="tab-contents" id = "education">
+                        <ul>
+                            <li><span>2021-Current</span><br>Higher Education - BSc (HONS) Software Engineering</li>
+                            <li><span>2020-2020</span> <br>Advance Level Second Shy - Biology(CCC)</li>
+                            <li><span>2019-2019</span> <br>Advance Level Second Shy - Biology(CCS)</li>
+                            <li><span>2016-2016</span> <br>Ordinery Level - (8A, 1B)</li>
+                            <li><span>2006-2019</span> <br>School education - St.Sebastian's College</li>
+                        
+                        </ul>
+                        
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="tab-content.js"></script>
+
+    <!-- ---------------------------------Services--------------------------------- -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Development</h2>
+                    <p>I am capable of designing web pages by utilizing features introduced in HTML, CSS, JS and PHP. Currently I am following projects which support react 
+                        , .net, Node Js for web app development. My current univeristy 3rd year group project is developd using React and .net framwork which
+                        is developed for VOGUE TEX (PVT) LTD to manage their tasks. 
+            
+                    </p>
+                    <a href="#">Learn More</a>
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-robot"></i>
+                    <h2>Chat Bot Development</h2>
+                    <p>I am capable of developing chat bots/ voice assistants by utilizing python libraries such as Tensorflow, numpy. I have already developed 
+                        a prototype version for CINEC EXPO (2023). Currently I am studing on LLM (Large Lnaguage Models) to build a more responsive and response genrative
+                        chat bots. 
+                    </p>
+                    <a href="#">Learn More</a>
+                </div>
+
+                <div>
+                    <i class="fa-brands fa-google-play"></i>
+                    <h2>Mobile Development</h2>
+                    <p>
+                        I have managed to develop an carpets ecommerce store using Kotlin. I have used online tools to aid during my
+                        project to development. This application can be redesigned to fit for any type of ecommerce store and it uses Fire store by Fire Base
+                        for authentication and cloud storage which is used to reack items and save them.    
+            
+                    </p>
+                    <a href="#">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ----------------------------portfolio-------------------- -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">Portfolio</h1> 
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/projects/MIA_Chat_Bot.gif" alt="Mia">
+                    <div class="layer">
+                        <h3>Mia - AI Chat bot</h3>
+                        <p>This is an AI chat bot designed to interact you as a friend.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <img src="images/projects/ebook.PNG" alt="ebook">
+                    <div class="layer">
+                        <h3>Ebook Store</h3>
+                        <p>This is an EBook store to let you purchase your own copy.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <img src="images/projects/work-3.png" alt="mobile">
+                    <div class="layer">
+                        <h3>Carpet Store</h3>
+                        <p>This is a Carpet store, ecommerce mobile app</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+            
+        </div>
+    </div>
+
+    <!-- -----------------------contact-------------------------- -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="subtitle">Contact me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i> cooray2108@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i> +94 711498247</p>
+                    <div class="social-icons">
+                        <a href="https://github.com/MMEC69"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://linkedin.com/in/manosha-cooray-72865b22a"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://www.youtube.com/@better_call_cooray"><i class="fa-brands fa-youtube"></i></a>
+                        
+                    </div>
+
+                    <a href="downloads/CV_Manosha_Cooray.pdf" download class="btn btn2">Download CV</a>
+
+                </div>
+                <div class="contact-right">.
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name = "Name" placeholder="Your Name" required>
+                        <input type="email" name = "Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+                
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright &copy; Better Call Cooray</p>
+        </div>
+    </div>
+    <script src="contact_form.js"></script>
+</body>
+</html>
